@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <!--웹페이지의 상태, 외부파일을 import, 웹 이름 등 페이지에 대한 속성을 정의하는 곳-->
+        <title> Post 페이지 </title>
+    </head>
+    <body>
+        <h1> 안녕하세요 POST 페이지입니다.</h1>
+
+        <form action="test_post" method="post"> <!-- get으로 하면 링크에 내 주요 정보가 나와서 post로 설정-->
+            <p>이름: <input type="text" name="name"></p>
+            <p>비밀번호: <input type="password" name="pwd"></p>
+
+            <p>이름, 비밀번호를 입력하고 제출버튼을 누르세요 <input type="submit" value="제출"></p> <!--form이랑 submit 버튼은 짝꿍, submit을 눌러야 form이 반응-->
+        </form>
+    </body>
+</html>

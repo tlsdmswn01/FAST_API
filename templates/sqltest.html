@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title> 회원관리 </title>
+</head>
+
+<style> 
+    table{
+        border: 2px solid black; /* 테이블 사이에 간선(border)을 그려라 */
+    }
+    th{
+        border: 2px solid blue; /* 모든 테이블 헤드 부분 간선(border)을 그려라 */
+    }
+    td {
+        border: 2px solid pink; /* 모든 테이블 필드 값 들어가는 부분 간선(border)을 그려라 */
+    }
+
+</style>
+
+<body>
+    <table> # 테이블을 html에 넣는 방법
+        <tr> # 한 행씩 나타내는
+            <th> 선수 id </th> # 컬럼 헤드
+            <th> 선수 이름 </th>
+            <th> 상세정보 </th>
+        </tr>
+            {% for row in result_table %} #(ejs)임베비드 자바크립트 문법 - 밑에 tr, html을 반복
+        <tr>
+            <td> {{row.player_id}}</td> # 행에 들어가는 값 : 필드
+            <td> {{row.player_name}}</td>
+            <td><button onclick="location.href='/detail?id={{row.player_id}}&name={{row.player_name}}'">상세정보</button></td>
+        </tr>
+            {% endfor %}
+    </table>
+
+</body>
