@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <!--웹페이지의 상태, 외부파일을 import, 웹 이름 등 페이지에 대한 속성을 정의하는 곳-->
+        <title>1조 팀원 두명</title>
+        <style>
+            /* 스타일 시트를 사용하여 스타일을 지정합니다. */
+            body {
+                background-color: #f2f2f2; /* 전체 배경색을 회색조로 지정합니다. */
+                margin: 0; /* body의 기본 마진을 제거합니다. */
+            }
+            .header-box {
+                background-color: #ff3333; /* 헤더 상자의 배경색을 빨간색으로 지정합니다. */
+                color: white; /* 헤더 상자의 텍스트 색상을 흰색으로 지정합니다. */
+                padding: 10px; /* 헤더 상자의 안쪽 여백을 추가합니다. */
+                text-align: center; /* 텍스트를 가운데 정렬합니다. */
+            }
+            .search-bar {
+                background-color: white; /* 검색창의 배경색을 하얀색으로 지정합니다. */
+                padding: 10px; /* 검색창의 안쪽 여백을 추가합니다. */
+                text-align: center; /* 텍스트를 가운데 정렬합니다. */
+            }
+            input[type="text"] {
+                width: 70%; /* 검색창의 너비를 설정합니다. */
+                padding: 8px; /* 검색창의 안쪽 여백을 추가합니다. */
+                margin: 0; /* 검색창의 기본 마진을 제거합니다. */
+            }
+            input[type="submit"] {
+                background-color: #4CAF50; /* 검색 버튼의 배경색을 녹색으로 지정합니다. */
+                color: white; /* 검색 버튼의 텍스트 색상을 흰색으로 지정합니다. */
+                padding: 8px; /* 검색 버튼의 안쪽 여백을 추가합니다. */
+                border: none; /* 검색 버튼의 테두리를 제거합니다. */
+                cursor: pointer; /* 마우스 포인터를 손가락 모양으로 변경합니다. */
+            }
+            .line {
+                border: 1px solid #ff3333; /* 헤더와 콘텐츠 사이의 선 색상을 빨간색으로 지정합니다. */
+                margin: 10px 0; /* 선 주위에 여백을 추가합니다. */
+            }
+            .header-line {
+                border: 1px solid #ff3333; /* 헤더 아래의 선 색상을 빨간색으로 지정합니다. */
+                margin: 10px 0; /* 선 주위에 여백을 추가합니다. */
+            }
+            .content-box {
+                background-color: white; /* 콘텐츠 상자의 배경색을 하얀색으로 지정합니다. */
+                border: 2px solid #ff3333; /* 콘텐츠 상자의 테두리를 빨간색으로 지정합니다. */
+                padding: 20px; /* 콘텐츠 상자의 안쪽 여백을 추가합니다. */
+                margin: 20px; /* 콘텐츠 상자 주위에 여백을 추가합니다. */
+                text-align: center; /* 텍스트를 가운데 정렬합니다. */
+            }
+            .cute-image {
+                max-width: 100%; /* 이미지가 부모 요소의 최대 너비에 맞도록 합니다. */
+                height: auto; /* 이미지의 높이를 자동으로 조절합니다. */
+                margin-top: 20px; /* 이미지 위쪽에 여백을 추가합니다. */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header-box">
+            <h1>공지사항, 게시판, Q&A</h1>
+            <div class="header-line"></div> <!-- 첫 번째 헤더 아래의 선 -->
+        </div>
+
+        <div class="search-bar">
+            <form action="#" method="get"> <!-- 폼 엘리먼트를 추가하고 액션과 메서드를 지정합니다. -->
+                <input type="text" placeholder="검색어를 입력하세요" name="search"> <!-- 검색창을 추가합니다. -->
+                <input type="submit" value="검색"> <!-- 검색 버튼을 추가합니다. -->
+            </form>
+
+    
+         <div class="content-box">
+                <h1 style="color: blue">신나는 FastAPI</h1>
+                <h3 style="color: red">1조 파이팅 아좌좌</h3>
+                <h5 style="color: pink">^^즐거워</h5>
+                <div class="line"></div> <!-- 콘텐츠 상자 안의 각 섹션 사이의 선 -->
+    
+                <h2 style="color: hotpink">{{name1}}</h2>
+                <h2 style="color: blue">{{name2}}</h2>
+    
+                <img src="C:\Users\User\Desktop\Web FAST API\images.png" alt="귀여운 그림" class="cute-image">
+            </div>
+        </body>
+    </html>
+    
